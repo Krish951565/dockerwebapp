@@ -5,15 +5,11 @@ services:
     image: krish889/javadbrepo:JAVA
     ports:
       - "3306:3306"
-    deploy:
-      replicas: 1
    
 
   application:
     image: krish889/javaapprepo:JAVA
     ports:
       - "1111:8080"
-    deploy:
-      replicas: 3
     depends_on:
       - devopsdb
