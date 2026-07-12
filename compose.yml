@@ -3,12 +3,12 @@ version: "3.9"
 services:
 
   devopsdb:
-    image: krish889/javadbrepo:JAVA
+    image: krish889/db1repo:javadb
     ports:
       - "3306:3306"
 
   application:
-    image: krish889/javaapprepo:JAVA
+    image: krish889/app1repo:javaapp
     ports:
       - "1234:8080"
 
