@@ -1,15 +1,16 @@
 version: "3.9"
 
 services:
+
   devopsdb:
     image: krish889/javadbrepo:JAVA
     ports:
       - "3306:3306"
-   
 
   application:
     image: krish889/javaapprepo:JAVA
     ports:
-      - "1111:8080"
+      - "1234:8080"
+
     depends_on:
       - devopsdb
